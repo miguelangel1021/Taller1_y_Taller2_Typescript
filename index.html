@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class= "container">
+        <div class="row">
+            <div class="col">
+                
+               <h1 style="margin-top:30px" id="name"></h1>
+               <img class="img-fluid max-width: 100% height: auto" src="data:image/jpeg;base64,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" height="300px" width="300px" alt="Avatar">
+               <div class="card" style="margin-top: 30px">
+               
+               <h2 style="margin: 20px">Datos Personales</h2>
+               <div class="table-responsive-sm" style="margin: 20px">
+               <table class="table">
+                    <thead >
+                    
+                    </thead>
+                    <tbody>
+                                <tr>
+                                    <td>Código</td>
+                                    <td id="codigo"></td>
+                                </tr>
+                                <tr>
+                                    <td>Cédula</td>
+                                    <td id= "cedula"></td>
+                                </tr>
+                                <tr>
+                                   <td>Edad</td>
+                                   <td id= "edad"></td>
+                                </tr>
+                                <tr>
+                                   <td>Dirección</td>
+                                   <td id ="direccion"></td>
+                                </tr>
+                                <tr>
+                                   <td>Teléfono</td>
+                                   <td id="telefono"></td>
+                        </tr>
+                    </tbody>    
+                </table>
+               
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="margin-top: 30px">
+                <h2 style="margin:20px">Cursos Actuales</h2>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                      <div class="col">
+                          <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre" style="margin-left: 20px">
+                      </div>
+                      <div class="col">
+                          <button type="button" id="button-filterByName" class="btn btn-success" style="margin-left: 20px">Aplicar</button>
+                      </div>
+                    </div>
+                </form>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                      <div class="col">
+                          <input type="text" class="form-control" id="search-box-in" placeholder="Rango inicial" style="margin-left: 20px">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" id="search-box-fin" placeholder="Rango final" style="margin-left: 10px">
+                      </div>
+                      <div class="col">
+                          <button type="button" id="button-filterByRange" class="btn btn-success" style="margin-left: 10px">Filtrar</button>
+                      </div>
+                    </div>
+                </form>
+                <div class="table-responsive-sm" style="margin: 20px">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Curso</th>
+                            <th>Profesor</th>
+                            <th>Creditos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courses">
+                    </tbody>    
+                </table>
+                </div>
+                <div class="form-row">
+                    <div class= "col">
+                       <h3 style= "margin-left: 100px">Creditos totales:</h3>
+                    </div>
+                    <div class="col">
+                        <h3 id="total-credits"></h3>
+                    </div>
+                </div>
+                
+            </div>
+            </div> 
+        </div>
+    </div>
+    <script type="module" src="./scripts/course.js" ></script>
+    <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/main.js"></script> 
+    <script type="module" src="./scripts/student.js"></script>  
+</body>
+</html>
